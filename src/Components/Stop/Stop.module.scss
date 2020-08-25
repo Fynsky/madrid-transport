@@ -1,0 +1,64 @@
+
+.stopMain {
+    border: 1px solid grey;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    margin: .5rem 1rem;
+    padding: 1rem .5rem;
+    @media (min-width: 500px) {
+        margin: .5rem 4rem;
+    }
+}
+.stopMain img {
+    width: 2rem;
+    margin-right: 1rem;
+}
+
+.stopInfoBlock {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin: 0 0;
+    padding: 0 0;
+    // height: 3rem;
+}
+
+.stopInfoBlock div {
+    align-self: center;
+}
+
+.wordDefinition {
+    color: grey;
+    margin-top: .3rem;
+}
+
+
+
+.darkTheme.stopMain strong {
+    color: white;
+}
+
+.darkTheme.stopMain {
+    background-color: black;
+    box-shadow: 0 1px 3px 0 rgba(250, 244, 244, 0.9);
+}
+
+.darkTheme div {
+    color: white;
+}
+
+.darkTheme .wordDefinition {
+    color: grey;
+}
+
+.lightTheme.stopMain {
+    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.9);
+}
+
+.colorTheme.stopMain {
+    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.9);
+}

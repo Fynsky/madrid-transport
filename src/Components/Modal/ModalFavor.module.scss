@@ -1,0 +1,49 @@
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5rem;
+    color: black;
+}
+
+.modalBody {
+    color: black;
+    padding: 1rem;
+    width: 16rem;
+    height: 19.5rem;
+    border-radius: 5px;
+    background: #fff; 
+    padding-left: 3rem;
+    // background-color: rgb(230, 214, 214);
+
+    @media (min-width: 500px) {
+        width: 25rem;
+        height: 16rem;
+    }
+}
+
+.headH1, .paragraph {
+    color: black;
+}
+
+.modalBody button{
+    margin: 2rem .5rem;
+}
+
+fieldset {
+    color: black;
+}
+
+.dark {
+    
+}
+
+.color .modalBody {
+    // не достает до modalBody :(
+}

@@ -1,0 +1,129 @@
+.mainBusInfoPage {
+    padding: 1rem 1rem;
+}
+
+.stopNameDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 1rem;
+    @media (min-width: 500px) {
+        margin: 0 4rem;
+    }
+}
+
+.stopNameDiv div {
+    border: 1px solid grey;
+    border-radius: 5px;
+    // width: 18rem;
+    width: 100%;
+    padding: 0 1rem;
+    background-color: white;
+    margin: .1rem 0rem;
+    min-height: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+.stopNameDiv span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.stopNameDiv img {
+    width: 2.3rem;
+    margin-left: .5rem;
+    align-self: auto;
+}
+
+.stopNameDiv strong {
+    text-align: right;
+}
+
+.stopNameDiv p {
+    margin: 0;
+    width: 9rem;
+}
+
+.refreshIcon:hover {
+    transform: rotate(-45deg);
+    width: 2.5rem;
+}
+
+.refreshIcon:active{
+    width: 5rem;
+    transform: rotate(145);
+}
+
+.darkTheme .errorParagraph{
+    color: white;
+}
+
+.errorParagraph {
+    font-weight: bold;
+    padding: .5rem 1rem;
+    text-align: center;
+}
+
+.errorParagraph div{
+    font-weight: normal;
+    font-style: italic;
+}
+
+.loader {
+    text-align: center;
+}
+
+.divAddToFavor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 1rem;
+}
+
+.divAddToFavor span{
+    margin-right: 1rem;   
+}
+
+.dataAlertMessage {
+    margin: 1rem 0rem;
+    text-align: center;
+    @media (min-width: 500px) {
+        margin: 2rem 3rem;
+    }
+}
+
+.darkTheme .divAddToFavor span {
+    color: white;
+    // background-color: blue;
+}
+
+.darkTheme .stopNameDiv div{
+    background-color: black;
+    color: white;
+    box-shadow: 0 1px 3px 0 rgba(250, 244, 244, 0.9);
+}
+
+.darkTheme.mainBusInfoPage .loader {
+    color: white;
+}
+
+.darkTheme.mainBusInfoPage span{
+    color: white;
+}
+
+.darkTheme.mainBusInfoPage div{
+    color: white;
+}
+
+.lightTheme .stopNameDiv div{
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.9);
+}
+
+.colorTheme .stopNameDiv div{
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.9);
+}
+

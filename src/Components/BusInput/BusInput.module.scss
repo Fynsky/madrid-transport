@@ -1,0 +1,322 @@
+.main {
+    width: 100%;
+}
+
+.main form {  
+        padding: .5rem 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    
+.main button {
+    margin-left: .5rem;
+    height: 2.1rem;
+    // width: 6rem;
+    @media (min-width: 500px) {
+        margin-left: 2rem;
+    }
+}
+
+.main input {
+    padding: .5rem .5rem;
+    border: 1px solid  crimson;
+    border-radius: 5px;
+}
+
+.main p {
+    text-align: center;
+}
+
+.dataFindDiv {
+    text-align: center;
+}
+
+.alert {
+    border: 1px dashed grey;
+    border-radius: 5px;
+    background-color: rgb(173, 66, 66);
+    padding: .5rem 1rem;
+    text-align: center;
+    margin: .3rem 1rem;
+    @media (min-width: 500px) {
+        margin: .5rem 4rem;
+    }
+    button {
+        margin-top: .5rem;
+    }
+}
+
+
+/* class applies to select element itself, not a wrapper element */
+.selectForm {
+    // display: block;
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: 700;
+    color: #444;
+    line-height: 1.3;
+    padding: .5em 1.3em .3em .7em;
+    // padding: .3rem .4rem .3rem .4rem;
+    width: 1rem;
+    
+    box-sizing: border-box;
+    margin-left: 0.1rem;
+    border: 1px solid #aaa;
+    box-shadow: 0 1px 0 1px rgba(0,0,0,.04);
+    border-radius: .5em;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #fff;
+    /* note: bg image below uses 2 urls. The first is an svg data uri for the arrow icon, and the second is the gradient. 
+        for the icon, if you want to change the color, be sure to use `%23` instead of `#`, since it's a url. You can also swap in a different svg icon or an external image reference
+        
+    */
+    background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23007CB2%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E'),
+      linear-gradient(to bottom, #ffffff 0%,#e5e5e5 100%);
+    background-repeat: no-repeat, repeat;
+    /* arrow icon position (1em from the right, 50% vertical) , then gradient position*/
+    background-position: right .7em top 50%, 0 0;
+    /* icon size, then gradient */
+    background-size: .65em auto, 100%;
+    @media (min-width: 500px) {
+        padding: .4em 1.3em .3em .7em;
+        margin-left: 0.5rem;
+    }
+}
+/* Hide arrow icon in IE browsers */
+.selectForm::-ms-expand {
+    display: none;
+}
+/* Hover style */
+.selectForm:hover {
+    border-color: #888;
+}
+/* Focus style */
+.selectForm:focus {
+    border-color: #aaa;
+    /* It'd be nice to use -webkit-focus-ring-color here but it doesn't work on box-shadow */
+    box-shadow: 0 0 1px 3px rgba(59, 153, 252, .7);
+    box-shadow: 0 0 0 3px -moz-mac-focusring;
+    color: #222; 
+    outline: none;
+}
+
+/* Set options to normal weight */
+.selectForm option {
+    font-weight:normal;
+}
+
+/* Support for rtl text, explicit support for Arabic and Hebrew */
+*[dir="rtl"] .selectForm, :root:lang(ar) .selectForm, :root:lang(iw) .selectForm {
+    background-position: left .7em top 50%, 0 0;
+    padding: .6em .8em .5em 1.4em;
+}
+
+/* Disabled styles */
+.selectForm:disabled, .selectForm[aria-disabled=true] {
+    color: graytext;
+    background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22graytext%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E'),
+      linear-gradient(to bottom, #ffffff 0%,#e5e5e5 100%);
+}
+
+.selectForm:disabled:hover, .selectForm[aria-disabled=true] {
+    border-color: #aaa;
+}
+
+.inputDiv {
+    display: flex;
+    justify-content: center;
+    margin: 1rem 1rem;
+    @media (min-width: 500px) {
+        justify-content: center;
+        margin: 1rem 4rem;
+    }
+    
+}
+
+// .inputDiv hr {
+//     position: relative;
+//     top: 0px;
+//     left: 0px;
+//     // visibility: visible;
+//     right: 100px;
+//     width: 1px; 
+//     height: 3rem; 
+//     background: black; 
+//     // border: none;
+//     margin: 0;
+//     margin-left: 0rem;
+//     margin-right: 0;
+//     @media (min-width: 500px) {
+//         border: none;
+//         margin-left: 0.1rem;
+//         height: 3.2rem; 
+//         top: 0px;
+//         left: 0px;
+//         // display: none;
+//     }
+// }
+
+.inputDiv form {
+    flex-grow: 3;
+    // background-color: black;
+}
+
+.inputDiv input {
+    width: 1rem;
+    // min-width: 4.5rem;
+    // max-width: inherit;
+    // flex-grow: 2;
+    @media (min-width: 320px){
+        width: 3rem;
+    }
+    @media (min-width: 360px){
+        width: 5rem;
+    }
+    @media (min-width: 411px){
+        width: 8rem;
+    }
+    @media (min-width: 450px){
+        width: 10rem;
+    }
+    @media (min-width: 768px){
+        width: 20rem;
+    }
+    @media (min-width: 843px){
+        width: 22rem;
+    }
+}
+
+
+
+.starDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    // width: 33.594px;
+    // min-width: 44px;
+    // max-width: 44px;
+    width: 100%;
+    @media (min-width:500px) {
+        // margin-right: 2.5rem;
+    }
+}
+
+.starDiv img {
+   
+
+    @media (min-width: 500px){
+        
+    }
+}
+
+.emptyStar {
+    
+    height: 2rem;
+    @media (min-width: 500px){
+        height: 2.2rem;
+        // margin-top: .5rem;
+    }
+}
+
+.fullStar {
+    width: 2.8rem;
+    height: 2.8rem;
+    @media (min-width: 500px){
+        
+    }
+}
+
+.divStarFavoriteList {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 2rem;
+
+}
+.divStarFavoriteList img {
+    width: 3rem;
+    height: 3rem;
+}
+
+.howMoreStopsLeftDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: bolder;
+    margin: 1rem 1rem;
+    padding: .5rem 1rem;
+    background-color: whitesmoke;
+    border: 1px solid grey;
+    // border-radius: 5px;
+    // border-top: none;
+    // border-top: groove;
+    border-top: double;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-shadow: 0 1px 3px 0 rgba(75, 71, 71, 0.9);
+    @media (min-width: 500px) {
+        display: flex;
+        flex-direction: row;
+        margin: 1rem 4rem;
+    }
+}
+
+.howMoreStopsLeftDiv span {
+    margin: .5rem;
+}
+
+.unfortunatelyParagraph {
+    margin: 0 1rem;
+}
+
+.darkTheme .howMoreStopsLeftDiv {
+    background-color: black;
+    color: white;
+    box-shadow: 0 1px 3px 0 rgba(250, 244, 244, 0.9);
+}
+
+.darkTheme.inputDiv {
+    background-color: #000000;
+    border-radius: 5px;
+    // border: 1px solid #384081;
+    box-shadow: 0 1px 3px 0 rgba(250, 244, 244, 0.9);
+}
+
+.darkTheme .unfortunatelyParagraph {
+    color: white;
+}
+
+.darkTheme .dataFindDiv {
+    color: white;
+}
+
+.lightTheme.inputDiv {
+    background-color: whitesmoke;
+    // background-color: cadetblue;
+    // border: 1px solid black;
+    border-radius: 5px;
+    border: 1px solid #384081;
+    box-shadow: 0 1px 3px 0 rgba(75, 71, 71, 0.9);
+}
+
+.colorTheme.inputDiv {
+    // background-color: whitesmoke;
+    background-color: cadetblue;
+    // border: 1px solid black;
+    border-radius: 5px;
+    border: 1px solid grey;
+    box-shadow: 0 1px 3px 0 rgba(75, 71, 71, 0.9);
+}
+
+
+
+
+
+

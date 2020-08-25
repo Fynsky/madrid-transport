@@ -1,0 +1,160 @@
+.cardExpiration p {
+    text-align: center;
+}
+
+.cardExpiration span {
+    color: black;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 1rem;
+    padding: .5rem 0rem;
+    border: 1px solid grey;
+    border-radius: 4px;
+    background-color: cadetblue;
+    box-shadow: 0px 1px 3px 0px rgba(56, 43, 43, 0.9);
+    @media (min-width: 500px){ 
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+        height: 2.1rem;
+    }
+}
+
+.form input {
+    width: 8.5rem;
+    font-size: 1.1rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    margin-top: .1rem;
+    text-align: center;
+    @media (min-width: 500px){ 
+        height: 1.5rem;
+    }
+}
+
+.infoBlock {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    margin: 0 1rem;
+}
+
+
+.infoBlock div {
+    border: 1px solid grey;
+    border-radius: 5px;
+    margin-top: .5rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    background-color: white;
+    box-shadow: 0px 1px 3px 0px rgba(56, 43, 43, 0.9);
+    @media (min-width: 500px){ 
+        height: 3rem;
+    }
+}
+
+.infoBlock div span, .infoBlock div strong{
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    background-color: white;
+    min-width: 6rem;
+    @media (min-width: 500px){ 
+        height: 3rem;
+    }
+}
+
+.cardType {
+    text-align: center;
+    font-weight: bold;
+    border: 1px solid grey;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 0px 1px 3px 0px rgba(56, 43, 43, 0.9);
+    border-radius: 5px;
+    margin-top: .5rem;
+    width: 100%;
+}
+
+.desactivCard {
+    padding: .5rem 1rem;
+    text-align: center;
+}
+
+.divImageTarjeta {
+    text-align: center;
+    margin: 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.divImageTarjeta img {
+    width: 17rem;
+    margin-top: 1rem;
+}
+
+.divImageTarjeta div {
+    max-width: 32rem;
+}
+
+.bottomSpan {
+    text-align: center;
+}
+
+.alert {
+    border: 1px solid grey;
+    border-radius: 5px;
+    background-color: rgb(202, 49, 49);
+    padding: .5rem 1rem;
+    text-align: center;
+    margin-top: .3rem;
+}
+
+.errorDiv {
+    text-align: center;
+    margin: 2rem 3rem;
+}
+
+.darkTheme .infoBlock div {
+    background-color: black;
+    color: white;
+    box-shadow: 0 1px 3px 0 rgba(250, 244, 244, 0.9);
+    border: 1px solid #384081;
+}
+
+.darkTheme .cardType {
+    box-shadow: 0 1px 3px 0 rgba(250, 244, 244, 0.9);
+    border: 1px solid #384081;
+}
+
+.darkTheme.cardExpiration {
+        color: white;
+}
+.darkTheme form {
+    background-color: black;
+    box-shadow: 0 1px 3px 0 rgba(250, 244, 244, 0.9);
+}
+
+.darkTheme .infoBlock div span, .darkTheme .infoBlock div strong, .darkTheme span {
+    background-color: black;
+    color: white;
+}
+
+.lightTheme form {
+    background-color: whitesmoke;
+}
+
+

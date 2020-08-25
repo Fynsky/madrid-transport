@@ -1,0 +1,91 @@
+.main {
+    text-align: center;
+    margin: 2rem 1rem;
+}
+
+.headingSpan {
+    font-weight: bolder;
+    border: 1px solid grey;
+    // border-bottom: none;
+    border-bottom: groove;
+    background-color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 3rem 0rem;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    margin-bottom: 1rem;
+    padding: .5rem 2rem;
+    box-shadow: 0px 0px 2px 1px rgba(75, 71, 71, 0.9);
+    @media (min-width: 500px) {
+        margin: 1rem 3rem;
+    }
+}
+
+.wrapperPopularItems {
+    margin-top: 1rem;
+}
+
+.popularStop {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    border: 1px solid grey;
+    border-radius: 5px;
+    margin: 0.5rem 0rem;
+    padding: .5rem .5rem;
+    background-color: white;
+    height: 3rem;
+    @media (min-width: 500px) {
+        margin: 0.5rem 3rem;
+    }
+}
+
+.popularStop img {
+    width: 2rem;
+    margin-right: 1rem;
+}
+
+.popularStopInfoBlock {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin: 0 0;
+    padding: 0 0;
+    height: 3rem;
+}
+
+.popularStopInfoBlock div {
+    align-self: center;
+}
+
+.main.darkTheme strong {
+    color: white;
+}
+
+.darkTheme .popularStop {
+    background-color: black;
+    box-shadow: 0 1px 3px 0 rgba(250, 244, 244, 0.9);
+}
+
+.darkTheme div {
+    color: white;
+}
+
+.darkTheme .headingSpan {
+    background-color: black;
+    color: white;
+    box-shadow: 0 1px 3px 0 rgba(250, 244, 244, 0.9);
+}
+
+.lightTheme .popularStop {
+    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.9);
+}
+
+.colorTheme .popularStop {
+    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.9);
+}
+

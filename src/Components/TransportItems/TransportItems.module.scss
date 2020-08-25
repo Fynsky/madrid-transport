@@ -1,0 +1,248 @@
+
+.busItem, .cercItem {
+    margin-top: 1rem;
+    margin-left: 0rem;
+    margin-right: 0rem;
+    padding: .5rem;
+    // background-color: cadetblue;
+    background-color: rgb(36,156,157);
+    border: 1px solid black;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+
+    @media (min-width: 500px){
+        min-width: 500px; 
+        margin-left: 3rem;
+        margin-right: 3rem;
+    } 
+}
+
+.threeDots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.threeDots img {
+    height: 3rem;
+    @media (min-width:500px){
+        height: 4rem;
+    }
+}
+
+.leftPart {
+    display: flex;
+    justify-content: center;
+}
+
+.infoBlock {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    padding: .3rem;
+    width: 11.5rem;
+
+    @media (min-width: 500px){
+        min-width: 400px; 
+    }
+}
+
+.firstBus, .firstTrain {
+    display: flex;
+    flex-direction: column;
+}
+
+.secondBus, .thirdBus, .secondTrain, .thirdTrain {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1.5rem;
+}
+
+.busesBlock, .trainBlock {
+    display: flex;
+    margin-top: .3rem;
+    /* justify-content: center; */
+}
+
+.numberData {
+    border: 1px solid grey;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: .5rem .5rem;
+    min-width: 2.7rem;
+    max-width: 3rem;
+    min-height: 2.5rem;
+    max-height: 2.8rem;
+    align-self: center;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.9);
+    @media (min-width: 500px){
+        min-width: 3rem;
+        max-width: 3.1rem;
+        min-height: 2.8rem;
+        max-height: 3rem;
+        border-radius: 5px;
+    }
+}
+
+.blueBus {
+    background-color: rgb(44, 44, 211);
+    color: white;
+}
+
+.greenBus {
+    background-color: darkgreen;
+    color: white;
+}
+
+.nightBus {
+    background-color: grey;
+    color: lightgreen
+}
+
+.cercaniasIcon {
+    // background-color: rgb(44, 44, 211);
+    // color: white;
+}
+
+.metroLightIcon {
+    // background-color: rgb(44, 44, 211);
+    // color: white;
+}
+
+.metroIcon {
+    // background-color: rgb(44, 44, 211);
+    // color: white;
+}
+
+.lineNumber1 {
+    background-color: rgb(18, 183, 238);
+}
+
+.lineNumber2 {
+    background-color: rgba(240, 20, 20, 0.8);
+    color: white;
+}
+
+.lineNumber3 {
+    background-color: rgba(243, 243, 11, 0.8);
+    color: blue;
+}
+
+.lineNumber4 {
+    background-color: rgba(158, 45, 45, 0.8);
+}
+
+.lineNumber5 {
+    background-color: rgba(111, 209, 111, 0.8);
+}
+
+.lineNumber6 {
+    background-color:darkgrey;
+}
+
+.lineNumber7 {
+    background-color: orange;
+}
+
+.lineNumber8 {
+    background-color: rgb(202, 109, 125);
+}
+
+.lineNumber9 {
+    background-color: rgba(205, 76, 231, 0.8);
+}
+
+.lineNumber10 {
+    background-color: rgba(62, 62, 224, 0.8);
+    color: white;
+}
+
+.lineNumber11 {
+    background-color: rgb(20, 95, 20);
+    color: white;
+}
+
+.lineNumber12 {
+    background-color: rgb(62, 104, 62);
+}
+
+.lineNumberR {
+    background-color: transparent;
+}
+
+.lineNumberML2 {
+    background-color: transparent;
+    border: 1.5px solid rgb(209, 31, 31);
+}
+
+.lineNumberML3 {
+    background-color: transparent;
+    border: 1.5px solid rgb(149, 61, 167);
+}
+
+.lineNumberML1 {
+    background-color: transparent;
+    border: 1.5px solid rgb(83, 81, 221);
+}
+
+.hidenDiv {
+    font-style: italic;
+    font-weight: bold;
+    color: blueviolet;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.hidenDivMap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #346c57;
+    border: 1px none black;
+    border-radius: 4px;
+    color: white;
+    margin: 0;
+    @media (min-width: 500px) {
+        margin: 0 3rem;
+    }
+}
+
+.hidenDivMapOpen {
+    padding: .5rem;
+    border: 1px solid black;
+}
+
+.darkTheme.busItem, .darkTheme.cercItem {
+    background-color: black;
+    color: white;
+    box-shadow: 0 1px 3px 0 rgba(250, 244, 244, 0.9);
+    border: 1px solid #384081;
+}
+
+.darkTheme.hidenDivMap {
+    background-color: grey;
+    color: black;
+    border: none;
+}
+
+.colorTheme.hidenDivMap {
+    background-color: white;
+    color: black;
+}
+
+.lightTheme.busItem, .lightTheme.cercItem {
+    background-color: whitesmoke;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.9);
+    border: 1px solid #384081;
+}
+
+.colorTheme.busItem, .colorTheme.cercItem {
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.9);
+    border: 1px solid #384081;
+}
+

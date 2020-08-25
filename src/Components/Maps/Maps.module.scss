@@ -1,0 +1,97 @@
+.main {
+    display: flex;
+    flex-direction: column;
+}
+
+.main hr {
+    border: 1px solid green;
+    width: 8rem;
+}
+
+.stringDiv {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    // margin-top: 3rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    @media (min-width: 500px) {
+        justify-content: space-evenly;
+        margin-top: 3rem;
+    }
+}
+
+.stringDiv img {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    border: 2px solid grey;
+    // width: 100%;
+    @media (min-width: 500px) {
+        width: 12rem;
+        height: 12rem;
+    }
+
+}
+
+.link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 8rem;
+    height: 8rem;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    margin: 1rem;
+    @media (min-width: 500px) {
+        width: 12rem;
+        height: 12rem;
+    }
+}
+
+.link div {
+    margin-top: .5rem;
+    font-weight: bolder;
+}
+
+.link img{
+    width: 100%;
+    height: 100%;
+}
+
+.mapItemDiv {
+    background-color: whitesmoke;
+    padding: 0 2rem;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+.mapItemDiv img{
+    width: 30rem;
+    height: 30rem;
+    @media (min-width:500px) {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.mapItemDiv iframe {
+    flex-grow: 1;
+    margin-top: -5rem;
+    border: none;
+}
+
+.showNav.mapItemDiv {
+    display: none;
+}
+
+.darkTheme.main .link{
+    color: white;
+}
+
+.darkTheme.mapItemDiv {
+    background-color: black;
+}
