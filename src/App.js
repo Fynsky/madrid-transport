@@ -30,17 +30,17 @@ function App() {
         'showNavBar': showNav,
       }
   )
-  const navBarClassName = classNames({
+  const сlassNameNavBar = classNames({
     'navbar': true,
     'showNavBar': showNav
   })
-  const headerClassName = classNames({
+  const classNameHeader = classNames({
     'header': true,
     'fixHeader': showNav
   })
 
   function toggleNavbar(e) {
-    if (headerClassName.includes('fixHeader')) {
+    if (classNameHeader.includes('fixHeader')) {
       setShowNav(false)
     } 
   }
@@ -48,7 +48,6 @@ function App() {
   const handleClick = useCallback(e => {
     if (nodeNav.current && nodeNav.current.contains(e.target)) {
       // inside Nav
-      console.log('inside Nav')
       return;
     } 
       else if (nodeBusImage.current && nodeBusImage.current.contains(e.target)){
@@ -59,7 +58,6 @@ function App() {
       return setShowNav(!showNav)
     }  
     // outside click 
-    console.log('!! outside click - App !!')
     setShowNav(false)
   }, [showNav])
 
@@ -76,14 +74,16 @@ function App() {
     <BrowserRouter>
       <div className='wrapper'>
         <div className='app-wrapper'>
-          <header className={headerClassName}>
+          <header className={classNameHeader}>
               <Header busImageRef={nodeBusImage} menuImageRef={nodeMenuImage} showNav={showNav}/>
           </header>   
           <div className="container"> 
-            <div className={navBarClassName} ref={nodeNav}>
-              <Navbar onClickHandler={toggleNavbar} />
-            </div>
             <div className={classNameMainContent}>
+              {showNav ? 
+              <div className={сlassNameNavBar} ref={nodeNav}>
+                <Navbar onClickHandler={toggleNavbar} />
+              </div>
+              : null}
               <Route path='/' exact component={BusPageContainer}/>
               <Route path='/cardExpiration' exact component={CardExpirationContainer}/>
               <Route path='/probe' exact component={Probe}/>

@@ -1,11 +1,12 @@
 .navbarMain {
   position: fixed;
   height: 100%;
-  // padding: 1rem .5rem;
   padding-top: 1rem;
   width: 18rem;
+
   @media (min-width: 500px) {
     width: 20rem;
+    z-index: 30;
   }
 }
 
@@ -18,20 +19,6 @@
   font-size: 25px;
   transition: 0.3s;
 }
-
-
-
-// .divItem {
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-// }
-// .divItem div {
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   padding: 0;
-// }
 
 .imageIcon {
   width: 1.5rem;
@@ -56,25 +43,23 @@
   background-color: #9e9393;
 }
 
-
 .colorTheme {
   background-image: url('../../assets/images/b5.jpg'); 
 }
 
 .colorTheme a {
-  // color: #4d3030;
   color: #000000;
 }
 
 .colorTheme a:hover {
   color: #f1f1f1;
+
   .imageIcon {
     filter: invert(100%);
   }
 }
 
 .darkTheme {
-  // background-color: rgba(97, 49, 2, 0.911);
   background-image: url('../../assets/images/darkWallpaper1.png');
 }
 
@@ -83,9 +68,9 @@
 }
 
 .darkTheme a:hover {
-  // color: #4b0606;
   color: black;
   filter: contrast(1260%);
+
   .imageIcon {
     filter: invert(0);
   }
@@ -96,28 +81,23 @@
 }
 
 .lightTheme {
-  // background-color: rgb(93, 189, 144);
   background-image: url('../../assets/images/wallpaperGreen1.jpg'); 
-  
 }
 
 .lightTheme a {
   color: white;
-  
 }
 
 .lightTheme a:hover {
   color: #6d6565;
   filter: contrast(260%);
+
   .imageIcon {
     filter: invert(0%);
-    
   }
 }
 
 .lightTheme .imageIcon {
   filter: invert(100%);
-  // filter: sepia(100%);
-  // filter: opacity(50%); 
 }
   
