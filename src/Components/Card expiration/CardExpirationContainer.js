@@ -1,17 +1,17 @@
 import { connect } from 'react-redux'
 import CardExpiration from './CardExpiration'
-import {getDataCardExpirationThunk} from '../../Redux/cardExpirationReducer'
+import { getDataCardExpirationThunk } from '../../Redux/cardExpirationReducer'
 
-const mapStateToProps = (state) => {
-    return {
-        cardExpiration: state.cardExpiration,
-        settings: state.settings
-    }
+const mapStateToProps = state => {
+  return {
+    cardExpiration: state.cardExpiration,
+    settings: state.settings,
+  }
 }
 const mapDispatchToProps = {
-    getDataCardExpiration: getDataCardExpirationThunk
+  getDataCardExpiration: getDataCardExpirationThunk,
 }
 
-const CardExpirationContainer = connect(mapStateToProps, mapDispatchToProps)(CardExpiration) 
+const CardExpirationContainer = connect(mapStateToProps, mapDispatchToProps)(CardExpiration)
 
 export default CardExpirationContainer

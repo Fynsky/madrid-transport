@@ -1,83 +1,79 @@
 .showNavbar {
-    @media (min-width:500px) {
-        position: static;
-    }
+  @media (min-width: 500px) {
+    position: static;
+  }
 }
 .headerMain {
-    display: flex;
-    justify-content: space-between;
-    align-content: stretch;
-    align-items: center;
-    min-height: 3rem;
-    height: 100%;
-    width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-content: stretch;
+  align-items: center;
+  min-height: 3rem;
+  height: 100%;
+  width: 100%;
 }
 
 .busImage {
-    width: 1.6rem;
-    margin-right: 1rem;
-    @media (min-width: 500px){
-        width: 2rem;
-    }
+  width: 1.6rem;
+  margin-right: 1rem;
+
+  @media (min-width: 500px) {
+    width: 2rem;
+  }
 }
 
 .menuWhiteImage {
-    width: 1.8rem;
-    height: 1.5rem;
-    margin-left: .7rem;
-    margin-right: .5rem;
-    
+  width: 1.8rem;
+  height: 1.5rem;
+  margin-left: 0.7rem;
+  margin-right: 0.5rem;
 }
 
 .menuBlackImage {
-    width: 3rem;
+  width: 3rem;
 }
 
 .houseBut {
-    height: 2rem;
-    margin-right: .5rem;
+  height: 2rem;
+  margin-right: 0.5rem;
 }
 
 .divImagesMenuAndBus {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    @media (min-width: 500px){
-        width: 237px;
-        height: 100%;
-        flex-grow: 2;
-    }
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  @media (min-width: 500px) {
+    width: 237px;
+    height: 100%;
+    flex-grow: 2;
+  }
 }
 
 .textDiv {
-    margin-right: 4rem;
-    @media (min-width: 500px){
-        margin-right: 18rem;
-    }
+  margin-right: 4rem;
+
+  @media (min-width: 500px) {
+    margin-right: 18rem;
+  }
 }
 
 .colorTheme.headerMain {
-    background-color: rgb(28, 152, 168);
+  background-color: rgb(28, 152, 168);
 }
 
 .darkTheme.headerMain {
-    background-color: #2e2e2e;
-    background-image: url("../../assets//images/darkWallpaper1.png");
-    color: white;
+  background-color: #2e2e2e;
+  background-image: url('../../assets//images/darkWallpaper1.png');
+  color: white;
 }
 
 .lightTheme.headerMain {
-    color: white;
-    background-image: url('../../assets/images/wallpaperGreen1.jpg'); 
+  color: white;
+  background-image: url('../../assets/images/wallpaperGreen1.jpg');
 }
 
-.darkTheme .houseBut, .lightTheme .houseBut {
-    filter: invert(100%);
- }
-
-
-
-
-
-
-
+.darkTheme .houseBut,
+.lightTheme .houseBut {
+  filter: invert(100%);
+}

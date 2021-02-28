@@ -8,4 +8,4 @@ export const getDataCardExpAPI = (number) => axios.get(`https://api.interurbanos
     .then(res => res.data)
 
 
-export const getArrayAllBusStops = () => axios.get(`/jsonStops.json`)
+export const getArrayAllBusStopsAPI = () => axios.get(`/jsonStops.json`)

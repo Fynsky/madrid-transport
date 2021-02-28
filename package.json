@@ -48,6 +48,7 @@
     ]
   },
   "devDependencies": {
-    "pinch-zoom-element": "^1.1.1"
+    "pinch-zoom-element": "^1.1.1",
+    "prettier": "2.2.1"
   }
 }

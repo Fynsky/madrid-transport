@@ -1,0 +1,7 @@
+{
+  "prettier.semi": false,
+  "editor.formatOnSave": true,
+  "prettier.arrowParens": "avoid",
+  "prettier.printWidth": 110,
+  "prettier.singleQuote": true
+}

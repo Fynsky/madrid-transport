@@ -1,42 +1,40 @@
 .mainDiv {
-    padding: .5rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    font-size: 1rem;
-    border: 1px solid grey;
-    border-radius: 3px;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 1rem;
+  border: 1px solid grey;
+  border-radius: 3px;
 
-    div {
-        margin: .5rem;
-        text-align: center;
-        font-style: italic;
-    }
-    h4 {
-        text-decoration: underline;
-        text-align: center;
-        margin: 1rem;
-    }
-    h5 {
-        margin: 0;
-    }
-    button {
-        margin-bottom: .5rem;
-    }
+  div {
+    margin: 0.5rem;
+    text-align: center;
+    font-style: italic;
+  }
+  h4 {
+    text-decoration: underline;
+    text-align: center;
+    margin: 1rem;
+  }
+  h5 {
+    margin: 0;
+  }
+  button {
+    margin-bottom: 0.5rem;
+  }
 }
 
 .darkTheme.mainDiv {
-    background-color: black;
-    color: white;
+  background-color: black;
+  color: white;
 }
 
 .colorTheme.mainDiv {
-    background-color: #1c98a8;
+  background-color: #1c98a8;
 }
 
 .lightTheme.mainDiv {
-    background-color: #3c7856;
+  background-color: #3c7856;
 }
-
-

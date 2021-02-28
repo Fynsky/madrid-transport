@@ -24,7 +24,7 @@
   width: 1.5rem;
   height: 1.5rem;
   padding: 0;
-  margin-left: .5rem;
+  margin-left: 0.5rem;
 }
 
 .link {
@@ -35,7 +35,7 @@
 
 .link span {
   padding: 0;
-  margin-left: .5rem;
+  margin-left: 0.5rem;
 }
 
 .link:hover {
@@ -44,7 +44,7 @@
 }
 
 .colorTheme {
-  background-image: url('../../assets/images/b5.jpg'); 
+  background-image: url('../../assets/images/b5.jpg');
 }
 
 .colorTheme a {
@@ -77,11 +77,11 @@
 }
 
 .darkTheme .imageIcon {
-   filter: invert(100%);
+  filter: invert(100%);
 }
 
 .lightTheme {
-  background-image: url('../../assets/images/wallpaperGreen1.jpg'); 
+  background-image: url('../../assets/images/wallpaperGreen1.jpg');
 }
 
 .lightTheme a {
@@ -100,4 +100,3 @@
 .lightTheme .imageIcon {
   filter: invert(100%);
 }
-  
